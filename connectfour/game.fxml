@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGridPane" style="-fx-background-color: #D9F7F0;" xmlns="http://javafx.com/javafx/10.0.2-internal"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.internshala.connectfour.Controller">
+    <columnConstraints>
+        <ColumnConstraints/>
+        <ColumnConstraints maxWidth="313.4" minWidth="245.40001525878904" prefWidth="246.40001525878904"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="0.0" prefHeight="30.0"/>
+        <RowConstraints/>
+    </rowConstraints>
+    <children>
+        <Pane GridPane.columnSpan="2"/>
+        <Pane fx:id="insertedDiskPane" prefHeight="400.0" prefWidth="200.0" GridPane.rowIndex="1"/>
+        <VBox style="-fx-background-color: #2B3B4C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <children>
+                <Pane prefHeight="169.0" prefWidth="247.0">
+                    <children>
+                        <TextField fx:id="playerOneTextField" layoutX="49.0" layoutY="53.0"
+                                   promptText="Enter player one name">
+                            <opaqueInsets>
+                                <Insets left="15.0" right="15.0" top="35.0"/>
+                            </opaqueInsets>
+                        </TextField>
+                        <TextField fx:id="playerTwoTextField" layoutX="49.0" layoutY="85.0"
+                                   promptText="Enter Player two name">
+                            <opaqueInsets>
+                                <Insets left="15.0" right="15.0"/>
+                            </opaqueInsets>
+                        </TextField>
+                        <Label alignment="CENTER" layoutY="14.0" prefHeight="17.0" prefWidth="247.0"
+                               text="Enter Player names" textFill="#f8f5f5">
+                            <font>
+                                <Font name="Bell MT Italic" size="23.0"/>
+                            </font>
+                        </Label>
+                        <Button fx:id="setNamesButton" layoutX="49.0" layoutY="135.0" mnemonicParsing="false"
+                                prefHeight="37.0" prefWidth="183.0" text="Set Names">
+                            <font>
+                                <Font size="19.0"/>
+                            </font>
+                            <opaqueInsets>
+                                <Insets bottom="5.0" left="15.0" right="15.0" top="5.0"/>
+                            </opaqueInsets>
+                        </Button>
+                    </children>
+                </Pane>
+                <Region prefHeight="59.0" prefWidth="247.0" VBox.vgrow="ALWAYS"/>
+                <Label fx:id="playerNameLabel" alignment="CENTER" prefHeight="44.0" prefWidth="305.0" text="Player One"
+                       textFill="#f5eded">
+                    <font>
+                        <Font name="Berlin Sans FB" size="38.0"/>
+                    </font>
+                    <opaqueInsets>
+                        <Insets top="70.0"/>
+                    </opaqueInsets>
+                </Label>
+                <Label alignment="CENTER" prefHeight="62.0" prefWidth="318.0" text="Turn" textFill="#f2f0f0">
+                    <font>
+                        <Font name="Bodoni MT Bold Italic" size="30.0"/>
+                    </font>
+                </Label>
+                <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS"/>
+            </children>
+        </VBox>
+    </children>
+</GridPane>
